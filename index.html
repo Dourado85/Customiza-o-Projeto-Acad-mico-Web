@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projeto acadêmico de Desenvolvimento Web I com HTML5 e CSS3."
+    />
+    <title>Desenvolvimento Web I | HTML5 + CSS3</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navegação principal">
+        <a class="logo" href="#hero">WEB<span>01</span></a>
+        <ul class="nav__links">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#video-nativo">Vídeo</a></li>
+          <li><a href="#video-externo">YouTube</a></li>
+          <li><a href="#carrossel-manual">Carrossel</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-parallax">
+        <div class="hero-parallax__overlay"></div>
+        <div class="marquee-container">
+          <p class="marquee">
+            Código bem escrito não impressiona apenas máquinas, impressiona
+            pessoas.
+          </p>
+        </div>
+        <div class="hero-parallax__conteudo container">
+          <p class="eyebrow">DESENVOLVIMENTO WEB I</p>
+          <h1>HTML5 <span>+</span> CSS3</h1>
+          <p>
+            Estilização profissional de imagens, vídeos e interfaces
+            responsivas.
+          </p>
+          <a class="button" href="#galeria">Explorar projeto</a>
+        </div>
+      </section>
+
+      <section id="galeria" class="container section">
+        <div class="section-heading">
+          <p class="eyebrow">MÍDIA NA WEB</p>
+          <h2>Galeria de Imagens</h2>
+          <p>
+            Exemplos de responsividade, object-fit, bordas, sombras e efeitos de
+            interação.
+          </p>
+        </div>
+        <div class="galeria">
+          <figure class="media-card">
+            <img
+              class="midia-imagem"
+              src="img/web-design.svg"
+              alt="Interface web responsiva"
+            />
+            <figcaption>Interfaces responsivas</figcaption>
+          </figure>
+          <figure class="media-card">
+            <img
+              class="midia-imagem"
+              src="img/html5.svg"
+              alt="Ilustração representando HTML5"
+            />
+            <figcaption>Estrutura HTML5</figcaption>
+          </figure>
+          <figure class="media-card">
+            <img
+              class="midia-imagem"
+              src="img/css3.svg"
+              alt="Ilustração representando CSS3"
+            />
+            <figcaption>Estilização CSS3</figcaption>
+          </figure>
+          <figure class="media-card">
+            <img
+              class="midia-imagem"
+              src="img/responsivo.svg"
+              alt="Ilustração de telas responsivas"
+            />
+            <figcaption>Design responsivo</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="video-nativo" class="section section--dark">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">HTML5</p>
+            <h2>Vídeo Nativo</h2>
+            <p>
+              Exemplo do elemento <code>&lt;video&gt;</code> estudado em aula.
+            </p>
+          </div>
+          <video class="midia-video" controls poster="img/video-poster.svg">
+            <source src="video/aula-web.mp4" type="video/mp4" />
+            Este navegador não é compatível com a reprodução do vídeo.
+          </video>
+          <p class="media-note">
+            Coloque um arquivo MP4 chamado <code>aula-web.mp4</code> na pasta
+            <code>video</code> para utilizar esta seção.
+          </p>
+        </div>
+      </section>
+
+      <section id="video-externo" class="container section">
+        <div class="section-heading">
+          <p class="eyebrow">INCORPORAÇÃO</p>
+          <h2>Vídeo do YouTube</h2>
+          <p>Conteúdo externo incorporado com iframe.</p>
+        </div>
+        <div class="midia-embed">
+          <iframe
+            src="https://www.youtube.com/embed/UB1O30fR-EE"
+            title="Vídeo educativo sobre HTML"
+            loading="lazy"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="carrossel-automatico" class="container section">
+        <div class="section-heading">
+          <p class="eyebrow">CSS3</p>
+          <h2>Carrossel Automático</h2>
+          <p>
+            Construído com flex, overflow e <code>@keyframes</code>, sem
+            JavaScript.
+          </p>
+        </div>
+        <div class="carrossel" aria-label="Carrossel automático">
+          <div class="carrossel__trilho--auto">
+            <div class="carrossel__slide">
+              <img
+                class="midia-imagem"
+                src="img/web-design.svg"
+                alt="Interface web"
+              />
+            </div>
+            <div class="carrossel__slide">
+              <img class="midia-imagem" src="img/html5.svg" alt="HTML5" />
+            </div>
+            <div class="carrossel__slide">
+              <img class="midia-imagem" src="img/css3.svg" alt="CSS3" />
+            </div>
+            <div class="carrossel__slide">
+              <img
+                class="midia-imagem"
+                src="img/responsivo.svg"
+                alt="Responsividade"
+              />
+            </div>
+            <div class="carrossel__slide">
+              <img
+                class="midia-imagem"
+                src="img/web-design.svg"
+                alt="Interface web, repetição"
+              />
+            </div>
+            <div class="carrossel__slide">
+              <img
+                class="midia-imagem"
+                src="img/html5.svg"
+                alt="HTML5, repetição"
+              />
+            </div>
+            <div class="carrossel__slide">
+              <img
+                class="midia-imagem"
+                src="img/css3.svg"
+                alt="CSS3, repetição"
+              />
+            </div>
+            <div class="carrossel__slide">
+              <img
+                class="midia-imagem"
+                src="img/responsivo.svg"
+                alt="Responsividade, repetição"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="carrossel-manual" class="container section">
+        <div class="section-heading">
+          <p class="eyebrow">JAVASCRIPT + CSS3</p>
+          <h2>Carrossel Manual</h2>
+          <p>
+            As setas alteram o índice e o CSS faz a transição com translateX().
+          </p>
+        </div>
+        <div
+          class="carrossel carrossel--manual"
+          data-carrossel-manual
+          aria-label="Carrossel manual"
+        >
+          <div class="carrossel__trilho--manual">
+            <div class="carrossel__slide">
+              <img
+                class="midia-imagem"
+                src="img/web-design.svg"
+                alt="Interface web"
+              />
+            </div>
+            <div class="carrossel__slide">
+              <img class="midia-imagem" src="img/html5.svg" alt="HTML5" />
+            </div>
+            <div class="carrossel__slide">
+              <img class="midia-imagem" src="img/css3.svg" alt="CSS3" />
+            </div>
+            <div class="carrossel__slide">
+              <img
+                class="midia-imagem"
+                src="img/responsivo.svg"
+                alt="Responsividade"
+              />
+            </div>
+          </div>
+          <button
+            type="button"
+            class="carrossel__seta carrossel__seta--esquerda"
+            aria-label="Slide anterior"
+          >
+            &#10094;
+          </button>
+          <button
+            type="button"
+            class="carrossel__seta carrossel__seta--direita"
+            aria-label="Próximo slide"
+          >
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <section id="contato" class="container section">
+        <div class="contact">
+          <div class="section-heading">
+            <p class="eyebrow">FALE COMIGO</p>
+            <h2>Formulário de Contato</h2>
+            <p>Área demonstrativa para aplicar estilos em campos e botão.</p>
+          </div>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="nome">Nome</label
+              ><input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label
+              ><input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="voce@email.com"
+                required
+              />
+            </div>
+            <div>
+              <button class="button" type="submit">Enviar mensagem</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer__content">
+        <p>&copy; <span id="ano-atual"></span> Desenvolvimento Web I.</p>
+        <p>Projeto acadêmico • HTML5 + CSS3 + JavaScript</p>
+      </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
